@@ -26,3 +26,10 @@ function reviso() {
     let resultado = `Obtuviste ${correctas} de ${totalPreguntas} preguntas correctas.`;
     document.getElementById("resultado").innerText = resultado;
 }
+//NAV BAR
+const menuIcon = document.getElementById('menu-icon');
+const navLinks = document.getElementById('nav-links');
+
+menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+});
