@@ -119,7 +119,7 @@ const characters = [
     {
         name: 'Fū',
         clan: 'no pertenece a un clan conocido,',
-        description: ' Fū es una ninja del País del Viento y la portadora del Bijū de seis colas, Chōmei . Pertenece al Clan Fūma, conocido por sus habilidades relacionadas con los insectos. A lo largo de la serie Naruto , su historia se centra en su captura y liberación durante la Cuarta Gran Guerra Ninja.Fū es secuestrada por la organización Akatsuki, que busca recolectar todos los Bijū para sus propios fines. A pesar de la tortura y el sufrimiento que enfrenta en manos de Akatsuki, Fū mantiene una actitud optimista y amable. Su habilidad con los insectos, otorgada por su Bijū Chōmei, le permite utilizar técnicas especializadas en combate.Eventualmente, Fū es liberada, y su historia pone de aliviar el dolor y la lucha de los Jinchūriki . Aunque su aparición en la serie es relativamente breve, su carácter y habilidades dejan una impresión significativa, mostrando la crueldad de Akatsuki y la resiliencia de los Jinchūriki .',
+        description: ' Fū es una ninja del País del Viento y la portadora del Bijū de seis colas, Chōmei . Pertenece al Clan Fūma, conocido por sus habilidades relacionadas con los insectos. A lo largo de la serie Naruto , su historia se centra en su captura y liberación durante la Cuarta Gran Guerra Ninja.Fū es secuestrada por la organización Akatsuki, que busca recolectar todos los Bijū para sus propios fines. A pesar de la tortura y el sufrimiento que enfrenta en manos de Akatsuki, Fū mantiene una actitud optimista y amable. Su habilidad con los insectos, otorgada por su Bijū Chōmei, le permite utilizar técnicas especializadas en combate.Eventualmente, Fū es liberada, y su historia pone de aliviar el dolor y la lucha de los Jinchūriki . Aunque su aparición en la serie es relativamente breve, mostrando la crueldad de Akatsuki y la resiliencia de los Jinchūriki .',
         image: 'personajes/perfil-Fuu.webp',
         featuredImages: [
             'sub-personajes/fuu-1.webp',
@@ -239,7 +239,7 @@ const characters = [
     },
     {
         name: 'Kakuzu',
-        clan: ' no pertenece a un clan conocidoe',
+        clan: ' no pertenece a un clan conocido',
         description: 'Kakuzu es un miembro de la organización Akatsuki, conocido por su habilidad para manipular su cuerpo con hilos de chakra, lo que le permite reparar y controlar partes de su cuerpo e incluso cambiar de forma. Es uno de los miembros más antiguos de Akatsuki y forma pareja con Hidan.Kakuzu es conocido por su naturaleza despiadada y su enfoque pragmático hacia las misiones. Su habilidad para absorber el chakra y su inmortalidad parcial hacen de él un adversario formidable. En la serie, Kakuzu se enfrenta a los miembros del equipo 10 de Konoha durante una misión para capturar a un Jinchūriki. Finalmente, es derrotado por Shikamaru Nara, que usa su ingenio para superar sus habilidades y capturarlo. Kakuzu muere tras la derrota, y su historia destaca la amenaza que representa para la aldea y el impacto de su derrota en la lucha contra Akatsuki.',
         image: 'personajes/perfil-kakusu.webp',
         featuredImages: [
@@ -260,9 +260,9 @@ const characters = [
         ]
     },
     {
-        name: 'Karin',
-        clan: 'Clan Uzumaki',
-        description: '',
+        name: 'Samui',
+        clan: 'no pertenece a un clan conocido',
+        description: 'Samui es presentada durante el arco de la reunión de los Cinco Kages, donde es enviada como mensajera de su aldea para informar a Konoha sobre la captura de Killer Bee por parte de Akatsuki. Más adelante, se la ve junto a su equipo, compuesto por Karui y Omoi, participando en la Cuarta Gran Guerra Ninja.',
         image: 'personajes/perfil-samui.webp',
         featuredImages: [
             'sub-personajes/samui-1.webp',
