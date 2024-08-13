@@ -1,0 +1,1038 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Skranji:wght@400;700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@font-face {
+    font-family: 'naruto';
+    src: url(../fonts/ninja_naruto/njnaruto.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'ramen';
+    src: url(../fonts/ramen_ichiraku/RAMEN\ ICHIKARU.otf) format(truetype);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* PAGINA INICIO */
+body {
+    background-color: #010624;
+}
+
+header {
+    background-color: #010624;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 10px 0 0 40px;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.navbar {
+    margin: 10px 0;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'naruto';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+    transition: 1s;
+}
+
+.navbar ul li a:hover {
+    color: #f1c40f;
+    transition: 1s;
+}
+
+.contenedor-1 {
+    background-color: #010624;
+    display: flex;
+}
+
+/* NAV-BAR SECUNDARIO */
+.navbar-secundario {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    display: none;
+    /* Oculto por defecto en dispositivos pequeños */
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+/* contenedor */
+.container {
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.container .cart-desc {
+    padding: 10px;
+    border-radius: 15px;
+    text-align: justify;
+    width: 95%;
+    color: #ffffff;
+    font-family: cursive;
+    font-size: 16px;
+    background: #000d35;
+}
+
+.container .invitacion h2 {
+    color: #eea332;
+}
+
+.container .invitacion {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.container .invitacion .image img {
+    border-radius: 10px;
+    width: 300px;
+    height: 230px;
+    margin: 50px 0 0 0;
+    transform: scale(1.01);
+    transition: 1s ease;
+}
+
+.container .invitacion .image:hover {
+    transform: scale(1.04);
+    transition: 1s ease;
+}
+
+.container .invitacion .invit {
+    text-align: justify;
+    width: 50%;
+    margin: 50px 0 0 0;
+    padding: 10px;
+    border-radius: 15px;
+    color: #b9b6cd;
+    font-family: cursive;
+    font-size: 15px;
+    background-color: rgb(4, 0, 47);
+}
+
+.container .invitacion .invit h2 {
+    text-align: left;
+}
+
+.container .invitacion .invit a button {
+    margin: 10px 0 0 0;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(120, 160, 255);
+    transition: 1s;
+}
+
+.container .invitacion .invit a button:hover {
+    background: linear-gradient(50deg, #ffd59b, #fd9b2c);
+    color: #000d35;
+}
+
+.container .invitacion .invit a button {
+    text-decoration: none;
+    font-family: cursive;
+}
+
+/* slider general */
+.slider {
+    margin: 0 30px 0 0;
+    padding: 10px 0;
+    position: relative;
+    width: 60%;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slides img {
+    border-radius: 20px;
+    width: 100%;
+    height: 82.3vh;
+    flex-shrink: 0;
+}
+
+/* slider-cosplay */
+.slider-cosplay {
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.slide-cosplay {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slide-cosplay img {
+    border-radius: 20px;
+    width: 100%;
+    height: 88vh;
+    flex-shrink: 0;
+}
+
+/* CONTENIDO-GENERAL */
+.container-list {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+            minmax(350px,
+                1fr));
+    gap: 18px;
+}
+
+.list-items {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ffe1c5;
+    height: auto;
+}
+
+.list-items p {
+    text-align: end;
+    width: 100%;
+}
+
+.list-items p a button {
+    border-radius: 20px;
+    margin: 0 10px 0 0;
+    width: 85px;
+    height: 30px;
+}
+
+.list-items p a .fav {
+    background-color: rgb(255, 62, 62);
+    transition: 1s;
+}
+
+.list-items p a .fav:hover {
+    color: rgb(255, 53, 53);
+    background-color: rgb(81, 66, 180);
+
+}
+
+.list-items p a .down {
+    background-color: rgb(48, 48, 255);
+    transition: 1s;
+}
+
+.list-items p a .down:hover {
+    color: #012287;
+    background-color: aqua;
+}
+
+.list-items p a .ver {
+    background-color: yellow;
+    transition: 1s;
+}
+
+.list-items p a .ver:hover {
+    background-color: rgb(203, 255, 100);
+    color: darkorange;
+}
+
+.list-items .items {
+    border-radius: 10px;
+    height: 85vh;
+    margin: 10px 0 0 0;
+    border: 2px solid black;
+}
+
+.list-items .items img {
+    width: 100%;
+    height: 40%;
+    border-radius: 8px 8px 0 0;
+}
+
+.list-items .items .items-text {
+    font-family: cursive;
+    padding: 0 5px;
+}
+
+.list-items .items .items-text p {
+    text-align: justify;
+}
+
+footer {
+    font-family: cursive;
+    padding: 10px;
+    background-color: #012287;
+    text-align: center;
+    color: #d3d3d3;
+}
+
+/* PAGINA PERSONAJES */
+#profile {
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#profile-image-container {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+#profile-image-container img {
+    box-shadow: 0 0 20px 10px rgba(55, 158, 255, 0.878);
+}
+
+#profile-image {
+    width: 450px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.container-general {
+    border-radius: 20px;
+    background-color: #a2cafffb;
+    padding: 5px 20px;
+    width: 45%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 600px;
+}
+
+#profile-info {
+    text-align: justify;
+    font-family: cursive;
+}
+
+#profile-buttons a button {
+    width: 130px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #b9b6cd;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#profile-buttons a button:hover {
+    transition: 1s;
+    background-color: red;
+}
+
+#featured-images {
+    display: flex;
+    margin-top: 20px;
+}
+
+.featured-image {
+    background-image: url(../img/fondo.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 240px;
+    margin: 0 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.featured-image:hover {
+    border-color: #000;
+}
+
+#character-selector {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#prev-button,
+#next-button {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#character-thumbnails {
+    display: flex;
+    overflow-x: auto;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #07263b;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#character-thumbnails::-webkit-scrollbar {
+    display: none;
+}
+
+.thumbnail {
+    width: 60px;
+    height: 100px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 40px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.thumbnail:hover {
+    border-color: #000;
+}
+
+/* PAGINA HISTORIA */
+.main-history {
+    background-image: url(../img/fondo-2.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 45rem;
+}
+
+.main-history .container-title-history {
+    position: absolute;
+    bottom: -127px;
+    left: 0;
+    right: 0;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-history {
+    width: auto;
+}
+
+.title-history h2 {
+    font-family: 'naruto';
+    border-radius: 20px 20px 0 0;
+    border: 12px double rgb(0, 0, 0);
+    padding: 10px;
+    background-color: #fff7ca;
+}
+
+.info-history {
+    border-radius: 20px;
+    border: 12px double rgb(0, 0, 0);
+    background-color: #ffeccc;
+    padding: 10px;
+    text-align: justify;
+    display: flex;
+}
+
+.info-history img {
+    width: 150px;
+}
+
+.info-history p {
+    font-family: 'ramen';
+    font-size: 19px;
+}
+
+.info-history p a {
+    border-radius: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px;
+    width: 120px;
+    height: 30px;
+    background-color: #fc4848;
+    transition: 1s;
+}
+
+.info-history p a:hover {
+    background: linear-gradient(50deg, rgb(95, 255, 252) 50%, rgb(82, 128, 255) 50%);
+    color: rgb(20, 22, 74);
+}
+
+.fnd-history {
+    border-radius: 20px;
+    border: 12px double rgb(0, 0, 0);
+    background-color: #ffeccc;
+    height: 600px;
+}
+
+.container-history {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+            minmax(390px,
+                1fr));
+    gap: 16px;
+}
+
+.content-history img {
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    height: 250px;
+}
+
+.content-descripcion {
+    font-family: cursive;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+    border: 2px solid black;
+    text-align: justify;
+    margin: auto;
+    width: 94%;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* PAGINA COSPLAY */
+.container-cosplay {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+            minmax(350px,
+                1fr));
+    gap: 18px;
+}
+
+.item-cosplay {
+    border-radius: 13px;
+    background-color: #ffece1;
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+}
+
+.cosplay-content img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 400px;
+}
+
+.cosplay-descripcion {
+    padding: 10px;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+.image-anuncio {
+    margin: 10px 0;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.image-anuncio img {
+    width: 100%;
+    border-radius: 10px;
+    height: 650px;
+}
+
+/* PAGINA QUIZ */
+.Quiz-container {
+    background-image: url(../img/fondo-quiz.webp);
+    background-size: cover;
+    font-family: ramen;
+    text-align: justify;
+    color: #000000;
+    width: 100%;
+}
+
+.Quiz-container h1 {
+    text-align: center;
+    font-size: 35px;
+    background: linear-gradient(to right, #000000, #160965c1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.Quiz-duo {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.Quiz {
+    border-radius: 20px;
+    padding: 25px;
+    width: 35%;
+    height: auto;
+    background-color: #f4e4bdfb;
+    margin: 20px 0;
+}
+
+.resultado {
+    display: flex;
+    justify-content: center;
+}
+
+.resultado-final {
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 80px;
+    background-color: #fc4848;
+    border-radius: 20px;
+}
+
+.resultado-final button {
+    font-family: ramen;
+    background-color: #fff59b;
+    margin: 0 10px;
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.resultado-final button:hover {
+    background-color: aqua;
+}
+
+/* DISEÑO RESPONSIVO */
+@media only screen and (min-width: 300px) and (max-width: 480px){
+
+    /* Estilos específicos para móviles pequeños */
+    .navbar {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 200px;
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        transition: height 0.3s ease;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .nav-links.open {
+        display: flex;
+        height: auto;
+    }
+
+    .contenedor-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .container .invitacion {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container .invitacion .image {
+        width: 90%;
+    }
+
+    .container .invitacion .image img {
+        justify-content: center;
+        width: 100%;
+        height: 400px;
+    }
+
+    .container .invitacion .invit {
+        width: 90%;
+    }
+
+    .slider {
+        width: 90%;
+        margin: 0;
+    }
+
+    .slider .slides {
+        width: 100%;
+    }
+
+    .list-items {
+        height: auto;
+    }
+
+    .list-items .items {
+        padding: 10px;
+        height: auto;
+    }
+
+    /*PAGINA PERSONAJES*/
+    #profile {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    #profile-image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #profile-image {
+        width: 90%;
+    }
+
+    .container-general {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+        width: 95%;
+        padding: 10px;
+    }
+
+    #profile-info {
+        padding: 5px;
+        font-size: 10px;
+        height: auto;
+    }
+
+    .featured-image{
+        width: 90px;
+        height: 100px;
+    }
+
+    /*PAGINA HISTORIA*/
+    .main-history .container-title-history {
+        position: relative;
+        bottom: -430px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 150px;
+    }
+    .info-history p{
+        font-size: 15px;
+    }
+    .info-history img{
+        width: 150px;
+        height: 250px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+    /* Estilos específicos para tablets y móviles grandes */
+    .navbar {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 200px;
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        transition: height 0.3s ease;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .nav-links.open {
+        display: flex;
+        height: auto;
+    }
+
+    .contenedor-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container .invitacion {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container .invitacion .image {
+        width: 90%;
+    }
+
+    .container .invitacion .image img {
+        justify-content: center;
+        width: 100%;
+        height: 400px;
+    }
+
+    .container .invitacion .invit {
+        width: 90%;
+    }
+
+    .slider {
+        width: 90%;
+        margin: 0;
+    }
+
+    .slider .slides {
+        width: 100%;
+    }
+
+    /*PAGINA PERSONAJES*/
+    #profile {
+        flex-direction: column;
+    }
+
+    #profile-image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-general {
+        width: 100%;
+        padding: 0;
+        height: auto;
+    }
+
+    #profile-info {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    #featured-images img {
+        width: 100px;
+        height: 150px;
+    }
+
+    /*PAGINA HISTORIA*/
+    .main-history .container-title-history {
+        position: relative;
+        bottom: -355px;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .navbar {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 200px;
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        transition: height 0.3s ease;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .nav-links.open {
+        display: flex;
+        height: auto;
+    }
+
+    .contenedor-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .container .invitacion {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container .invitacion .image {
+        width: 90%;
+    }
+
+    .container .invitacion .image img {
+        justify-content: center;
+        width: 100%;
+        height: 400px;
+    }
+
+    .container .invitacion .invit {
+        width: 90%;
+    }
+
+    .slider {
+        width: 90%;
+        margin: 0;
+    }
+
+    .slider .slides {
+        width: 100%;
+    }
+
+    .list-items {
+        height: 580;
+    }
+
+    .list-items .items {
+        padding: 10px;
+        height: 570px;
+    }
+
+    /*PAGINA PERSONAJES*/
+    #profile {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    #profile-image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-general {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+        width: 90%;
+        padding: 10px;
+    }
+
+    #profile-info {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    /*PAGINA HISTORIA*/
+    .main-history .container-title-history {
+        position: relative;
+        bottom: -355px;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    featured-images {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    #featured-images img {
+        width: 150px;
+        height: 200px;
+    }
+
+    /*PAGINA HISTORIA*/
+    .main-history .container-title-history {
+        position: relative;
+        bottom: -355px;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+}

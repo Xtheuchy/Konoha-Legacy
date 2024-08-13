@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes</title>
+    <link rel="icon" href="img/icon-naruto.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.webp">
+        </div>
+        <nav class="navbar-secundario">
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="cosplays.html">Cosplays</a></li>
+                <li><a href="quiz.html">QUIZ</a></li>
+            </ul>
+        </nav>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="cosplays.html">Cosplays</a></li>
+                <li><a href="quiz.html">QUIZ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="profile">
+        <div id="profile-image-container">
+            <img id="profile-image" src="path_to_default_image.jpg" alt="Perfil del personaje">
+        </div>
+        <div class="container-general">
+            <div id="profile-buttons">
+                <a href="historia.html"><button>Historia por fans</button></a>
+            </div>
+            <div id="profile-info">
+                <h1 id="character-name">Nombre del personaje</h1>
+                <h3 id="character-clan">Clan del personaje</h3>
+                <p id="character-description">Breve historia del personaje...</p>
+            </div>
+            <div id="featured-images">
+                <img id="featured-image1" src="path_to_featured_image1.jpg" alt="Imagen destacada 1"
+                    class="featured-image">
+                <img id="featured-image2" src="path_to_featured_image2.jpg" alt="Imagen destacada 2"
+                    class="featured-image">
+                <img id="featured-image3" src="path_to_featured_image3.jpg" alt="Imagen destacada 3"
+                    class="featured-image">
+            </div>
+        </div>
+    </div>
+    <div id="character-selector">
+        <button id="prev-button">&lt;</button>
+        <div id="character-thumbnails">
+            <!-- Thumbnails will be dynamically loaded here -->
+        </div>
+        <button id="next-button">&gt;</button>
+    </div>
+    <footer>
+        <p>&copy; 2024 Xtheuchy | Página dedicada a Naruto | Derechos reservados 2024</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
